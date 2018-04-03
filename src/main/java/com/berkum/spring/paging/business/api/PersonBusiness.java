@@ -8,4 +8,6 @@ import com.berkum.spring.paging.domain.Person;
 public interface PersonBusiness {
 
 	Page<Person> findAll(Pageable page);
+
+	Page<Person> findByLastName(Pageable pageable, String lastName);
 }

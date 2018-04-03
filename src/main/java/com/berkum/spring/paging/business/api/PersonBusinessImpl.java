@@ -10,9 +10,16 @@ import com.berkum.spring.paging.domain.Person;
 @Component
 public class PersonBusinessImpl implements PersonBusiness {
 
+
 	@Autowired 
 	PersonRepository repository;
 	
+	@Override
+	public Page<Person> findByLastName(Pageable page, String lastName) {
+		Page<Person> persons = repository.findByLastName(page, lastName);
+		return persons;
+	}
+
 	
 	public Page<Person> findAll(Pageable page) {
 		Page<Person> persons = repository.findAll(page);
