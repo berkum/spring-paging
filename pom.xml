@@ -70,13 +70,6 @@
 			<version>0.24.0.RELEASE</version>
 		</dependency>
 
-
-		<dependency>
-			<groupId>com.lemniscate.struct</groupId>
-			<artifactId>spring-paging-module</artifactId>
-			<version>1.0.1.RELEASE</version>
-		</dependency>
-
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
